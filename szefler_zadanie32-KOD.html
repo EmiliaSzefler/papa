@@ -1,0 +1,54 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_zadanko()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<form>
+<textarea name="zadanko" cols="80" rows="20" readonly>
+<html>
+<head>
+<script type="text/javascript">
+var spodnie = {
+styl: 'Baggy',
+rozmiar: 'M',
+marka: 'Bershka',
+}
+spodnie.dlu=130;
+spodnie.pisz=function() {alert('Dlugość: ' + this.dlu + ' spodni')}
+spodnie.pisz();
+
+spodnie.rodzaj='długie';
+spodnie.spodnie_pokaz=function() {alert('Rodzaj: ' + this.rodzaj + ' cm')}
+spodnie.spodnie_pokaz();
+
+function klient(dlugosc_sze,styl_sze,rozmiar_sze)
+{
+this.dlugosc=dlugosc_sze;
+this.styl=styl_sze;
+this.rozmiar=rozmiar_sze;
+}
+klient.prototype.wypisz = function ()
+{document.write(this.dlugosc + ' ' + this.styl+ ' ' + this.rozmiar+"<br>");
+};
+var spodnie1 = new klient("Długie", "Baggy", "M");
+var spodnie2 = new klient('Krótkie', 'Kolarki', 'S');
+spodnie1.wypisz();
+spodnie2.wypisz();
+</script>
+</head>
+<body>
+<br>
+</body>
+</html>
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_zadanko()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

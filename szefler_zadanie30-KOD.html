@@ -1,0 +1,39 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_zadanko()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<form>
+<textarea name="zadanko" cols="80" rows="20" readonly>
+<html>
+<head>
+<script type="text/javascript">
+var spodnie = {
+styl: 'Baggy',
+rozmiar: 'M',
+marka: 'Bershka',
+pokaz: function ()
+{
+document.write(this.styl + ' ' + this.rozmiar + ' ' + this.marka)
+}
+}
+spodnie.pokaz();
+</script>
+</head>
+<body>
+<br>
+Spodnie
+</body>
+</html>
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_zadanko()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

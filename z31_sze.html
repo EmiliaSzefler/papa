@@ -1,0 +1,27 @@
+<html>
+ <head>
+ <script type="text/javascript">
+var spodnie = {
+styl: 'Baggy',
+rozmiar: 'M',
+marka: 'Bershka',
+pokaz: function ()
+{
+document.write(this.styl + ' ' + this.rozmiar + ' ' + this.marka)
+}
+}
+spodnie.pokaz();
+spodnie.dlu=130;
+spodnie.pisz=function() {alert('Dlugość: ' + this.dlu + ' spodni')}
+spodnie.pisz();
+
+spodnie.rodzaj='długie';
+spodnie.spodnie_pokaz=function() {alert('Rodzaj: ' + this.rodzaj + ' cm')}
+spodnie.spodnie_pokaz();
+ </script>
+ </head>
+<body>
+<br>
+Spodnie
+</body>
+</html>
